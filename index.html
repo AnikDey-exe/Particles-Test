@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> Particle Motion </title>
+
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script
+        src="https://unpkg.com/aframe-spe-particles-component@^1.0.4/dist/aframe-spe-particles-component.min.js"></script>
+</head>
+
+<body>
+    <a-scene background="white">
+        <a-entity 
+            position="0 5 -3"
+            spe-particles="
+            distribution: sphere; 
+            color: orange, yellow, red; 
+            velocity: 0 15 0; 
+            velocity-spread: 2 0 2; 
+            acceleration: 0 -10 0; 
+            radius: 2; size: 0.3; 
+            position-spread: 0.5 0.5 0.5;
+            particle-count: 200">
+        </a-entity>
+    </a-scene>
+</body>
+
+</html>
